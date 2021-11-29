@@ -35,7 +35,7 @@ func main() {
 
 	derBytes, _ := x509.CreateCertificate(rand.Reader, &template, &template, &pk.PublicKey, pk)
 
-	certOut, _ := os.Create("key.pem")
+	certOut, _ := os.Create("cert.pem")
 	pem.Encode(certOut, &pem.Block{Type: "CERTIFICATE", Bytes: derBytes})
 	certOut.Close()
 
