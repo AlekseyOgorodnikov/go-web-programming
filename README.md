@@ -19,3 +19,16 @@
 ### Создать базу данных
 
 `createdb <database name>`
+
+### Подключение к Postgres и создание таблицы
+
+`sudo -i -u postgres`
+
+### Подключение к созданному пользователю
+
+`psql -d gwp`
+
+### Создание таблицы при помощи setuo.sql
+
+`psql -U gwp -f setup.sql -d gwp`
+или `\i path to file.sql`
