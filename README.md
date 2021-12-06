@@ -32,3 +32,7 @@
 
 `psql -U gwp -f setup.sql -d gwp`
 или `\i path to file.sql`
+
+### Перезанрузка сервера Postgres
+
+`sudo service postgresql restart`
