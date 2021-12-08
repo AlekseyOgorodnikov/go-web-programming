@@ -31,7 +31,13 @@
 ### Создание таблицы при помощи setuo.sql
 
 `psql -U gwp -f setup.sql -d gwp`
-или `\i path to file.sql`
+или `\i <absolute path to file.sql>`
+
+### Отредактировать пароль на md5 заместо peer
+
+`sudo vim /etc/postgresql/<your_postgres_version>/main/pg_hba.conf`
+
+`:w` сохранить файл `:q` закрыть vim
 
 ### Перезанрузка сервера Postgres
 
